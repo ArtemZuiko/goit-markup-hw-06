@@ -244,11 +244,12 @@ button {
 }
 
 .modal-btn {
+  height: 50px;
+  width: 200px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  padding: 10px 32px;
 
   letter-spacing: 0.06em;
 
@@ -456,6 +457,7 @@ background-color: var(--accent-color);
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .logo-footer {
@@ -500,13 +502,6 @@ background-color: var(--accent-color);
   margin-bottom: 9px;
   }
 
-.join-socials {
-  width: 206px;
-  height: 80px;
-  
-  margin-left: 70px;
-}
-
 .benefits-name.footer-join {
   color: var(--primery-white-color);
 
@@ -527,10 +522,6 @@ background-color: var(--accent-color);
 }
 
 /* ==================FOOTER FORM======================= */
-
-.modal-form-cont {
-  margin-left: 93px;
-}
 
 .footer-form {
   display: flex;
@@ -556,15 +547,16 @@ background-color: var(--accent-color);
 
 .modal-form-btn-footer {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   height: 50px;
+  width: 200px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
 
   margin-left: 12px;
-  padding: 10px 32px;
 
   letter-spacing: 0.06em;
 
@@ -720,7 +712,6 @@ height: 100%;
 background-color: rgba(0, 0, 0, 0.2);
 
 transition: opacity var(--transition-fx), visibility var(--transition-fx);
-
 }
 
 .backdrop.is-hidden {
@@ -760,18 +751,11 @@ transition: opacity var(--transition-fx), visibility var(--transition-fx);
   
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-
-  /* transition: border-color var(--transition-fx); */
 }
 
 .modal-close-icon {
   transition: fill var(--transition-fx);
 }
-
-/* .modal-close-btn:hover, 
-.modal-close-btn:focus {
-  border-color: var(--accent-color);
-} */
 
 .modal-close-btn:hover .modal-close-icon, 
 .modal-close-btn:focus .modal-close-icon {
@@ -796,6 +780,10 @@ transition: opacity var(--transition-fx), visibility var(--transition-fx);
 
 .modal-form-field {
   margin-bottom: 10px;
+}
+
+.modal-form-textarea {
+  margin-bottom: 20px;
 }
 
 .modal-form-input-name {
@@ -845,6 +833,7 @@ transition: opacity var(--transition-fx), visibility var(--transition-fx);
 }
 
 .modal-form-message {
+  display: block;
   resize: none;
   width: 100%;
   height: 120px;
@@ -919,19 +908,24 @@ transition: opacity var(--transition-fx), visibility var(--transition-fx);
 
 .modal-form-check-desc{
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   color: var(--pimary-color);
 }
 
+.agreement-link {
+  color: var(--accent-color);
+}
+
 .modal-form-submit {
+  height: 50px;
+  width: 200px;
   align-self: center;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  padding: 10px 32px;
-
   letter-spacing: 0.06em;
 
   color: var(--primery-white-color);
